@@ -1,4 +1,3 @@
-# blob:https://web.whatsapp.com/a66701e3-58b7-417f-9a39-9d89a83e5fd7
 # Facade Crack Detection using YOLOvXX
 ## Problem Statement
 Facade cracks can indicate structural deterioration in buildings. 
