@@ -28,6 +28,7 @@ Support persistent condition records and maintenance-oriented decision workflows
   "pixel_area": 450
 }
 
+## XXX
 This follows the structured output and BIM-association concepts in the PDF. :contentReference[oaicite:8]{index=8}
 
 ---
@@ -57,3 +58,4 @@ This repository primarily supports the Computer Vision stream by providing:
 - evidence for reproducibility
 
 Future integration will connect this work with BIM association, structured outputs, and decision-support workflows.
+
