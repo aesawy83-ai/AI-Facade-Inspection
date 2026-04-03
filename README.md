@@ -69,11 +69,15 @@ All annotations were reviewed for consistency.
 ## Results Summary
 
 Final Performance:
-
-- mAP@0.5: 0.825
-- Strong precision-recall stability
-- Reliable detection of visible cracks
-- Minor misses on very thin hairline cracks
+| Metric | Value |
+|---|---|
+| Model | YOLOv8s |
+| Task | Single-Class Crack Detection |
+| mAP@0.5 | 0.825 |
+| Epochs | 50 |
+| Image Size | 640 |
+| Batch Size | 16 |
+| Runtime | Google Colab (T4 GPU) |
 
 ## Model Weights 
 The trained model weights (best.pt) are available here:
