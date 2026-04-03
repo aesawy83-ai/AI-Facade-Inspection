@@ -4,4 +4,4 @@ Façade condition assessment is still heavily dependent on manual inspection, ph
 
 This project addresses the information gap between physical façade assets and digital models by using AI-based computer vision to detect visible defects from imagery. The longer-term objective is to generate structured façade condition information that can support BIM-linked workflows and future digital twin integration.
 
-The current repository focuses on the detection layer of this system using YOLOvXXX-based crack detection.
+The current repository focuses on the detection layer of this system using YOLOv8-based crack detection.
