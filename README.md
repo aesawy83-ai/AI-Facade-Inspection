@@ -4,7 +4,18 @@
 This project addresses the gap between manual façade inspection and BIM-integrated digital twin workflows. The aim is to transform façade imagery into structured, traceable condition information that can support maintenance planning and future digital twin integration.
 
 The current repository implements the **Detect** stage of the workflow using a YOLOvXXX-based crack detection pipeline. Future stages will extend this toward structured outputs, BIM association, and condition-aware asset records.
+## Dataset & Model Summary
 
+| Metric | Value |
+|---|---|
+| Task | Single-Class Crack Detection |
+| Domain | Façade Inspection |
+| Model | YOLOv8s |
+| Epochs | 50 |
+| Image Size | 640 |
+| Batch Size | 16 |
+| mAP@0.5 | 0.825 |
+| Runtime | Google Colab T4 |
 ## Workflow Stages
 1. Capture - source-agnostic image acquisition
 2. Detect - AI-based façade defect localisation
