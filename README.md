@@ -83,14 +83,14 @@ The trained model weights (best.pt) are available here:
 
 ## Reproduce in Google Colab
 
-1. Open `notebooks/M4U3.ipynb` in Colab.
+1. Open `notebooks/ AI-Facade-Inspection.ipynb`  in Colab.
 2. Runtime → Change runtime type → GPU.
 3. Run all cells.
 4. Training outputs will be saved in `/runs/detect/`.
 
 ## Reproducibility Proof
 
-Last successful run: [27/2/2026]  
+Last successful run: [3/4/2026]  
 Runtime: Google Colab (T4 GPU)  
 Epochs: 50  
 Model: YOLOv8s  
