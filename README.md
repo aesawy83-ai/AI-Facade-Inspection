@@ -1,15 +1,17 @@
-# Facade Crack Detection using YOLOvXX
-## Problem Statement
-Facade cracks can indicate structural deterioration in buildings. 
-Manual inspection is time-consuming and subjective.
+# Bridging the Analog-Digital Divide in Façade Inspection and Maintenance
 
-This project develops a YOLOv8-based object detection model 
-to automatically detect facade cracks from images 
-to support early-stage structural inspection workflows.
+## AI-Enabled Workflow for Façade Defect Mapping and Digital Twin Integration
 
-Success criteria:
-- Achieve strong detection performance (mAP@0.5 ≥ 0.75)
-- Maintain reliable detection across lighting variations
+This project addresses the gap between manual façade inspection and BIM-integrated digital twin workflows. The aim is to transform façade imagery into structured, traceable condition information that can support maintenance planning and future digital twin integration.
+
+The current repository implements the **Detect** stage of the workflow using a YOLOv8-based crack detection pipeline. Future stages will extend this toward structured outputs, BIM association, and condition-aware asset records.
+
+## Workflow Stages
+1. Capture – source-agnostic image acquisition
+2. Detect – AI-based façade defect localisation
+3. Structure – convert detections into structured measurable outputs
+4. Integrate – associate outputs with BIM/model elements
+5. Assess – support condition tracking and maintenance decisions
 
 ## Dataset
 
