@@ -1,36 +1,17 @@
 # Error Analysis
 
-## Overview
-The crack detection model achieved mAP@0.5 = 0.825. While performance is strong overall, failure cases remain in challenging visual conditions.
+## False Positives
+1. Surface joints and façade panel edges occasionally resemble crack geometry.
+2. Strong shadow boundaries may trigger false crack detections.
+3. High-contrast stains or weathering marks can be misinterpreted as cracks.
 
----
+## False Negatives
+1. Hairline cracks with very low contrast are sometimes missed.
+2. Small crack fragments may be partially localized.
+3. Cracks under poor illumination or textured materials remain challenging.
 
-## False Positives (FP)
-
-1. High-contrast facade lines incorrectly classified as cracks.
-2. Surface shadows detected as structural damage.
-3. Texture discontinuities mistaken for fine cracks.
-
----
-
-## False Negatives (FN)
-
-1. Very thin hairline cracks missed at 640 resolution.
-2. Low-contrast cracks on bright surfaces undetected.
-3. Partially occluded crack regions not fully localized.
-
----
-
-## Improvement Plan
-
-1. Increase dataset size with more thin crack examples.
-2. Increase input resolution (imgsz=768).
-3. Add brightness/contrast augmentation.
-4. Train longer (50 epochs).
-
----
-
-## Risk Note
-
-False negatives are more critical than false positives in structural inspection.  
-Human validation is recommended.
+## Prioritized Improvement Actions
+1. Expand the dataset with fine and low-contrast crack samples.
+2. Increase diversity across façade materials, camera angles, and lighting.
+3. Explore higher image resolution and longer training for thin-structure sensitivity.
+4. Evaluate confidence threshold tuning for better precision-recall balance.
