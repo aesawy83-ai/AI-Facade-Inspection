@@ -104,8 +104,7 @@ Final Performance:
 | ![](results/predictions_val/val1.jpg) | ![](results/predictions_val/val2.jpg) | ![](results/predictions_new/new1.jpg) |
 
 ## Model Weights 
-The trained model weights (best.pt) are available here:
-[Download Model Weights] (https://github.com/aesawy83-ai/AI-Facade-Inspection/releases/tag/%23FMP)
+The trained model weights (`best.pt`) are available here: [Download Model Weights](https://github.com/aesawy83-ai/AI-Facade-Inspection/releases/tag/%23FMP)
 
 ## Reproduce in Google Colab
 
