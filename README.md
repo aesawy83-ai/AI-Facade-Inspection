@@ -36,7 +36,16 @@ In the current repository, the practical focus is:
 - Can YOLOvXXX reliably detect façade cracks on held-out images?
 - Can the detection pipeline be reproduced by a third party in Google Colab?
 - Can the detection evidence form a valid foundation for later BIM-linked workflow stages?
+  
+## Workflow Mapping
 
+| Workflow Stage | Status in this Repository | Evidence |
+|---|---|---|
+| Capture | Partially addressed | Roboflow dataset and façade image inputs |
+| Detect | Implemented | YOLOvXXX notebook, metrics, PR curve, confusion matrix |
+| Structure | Planned | future structured output schema |
+| Integrate | Planned | future BIM / Revit association workflow |
+| Assess | Planned | future condition intelligence and maintenance reporting |
 
 ## Dataset
 
