@@ -1,6 +1,6 @@
 # Dataset Strategy
 
-The dataset is managed through Roboflow and exported in YOLOvXXX format for use in Google Colab.
+The dataset is managed through Roboflow and exported in YOLOv8 format for use in Google Colab.
 
 ## Current Dataset Scope
 - Façade crack imagery
