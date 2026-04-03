@@ -78,7 +78,13 @@ Final Performance:
 | Image Size | 640 |
 | Batch Size | 16 |
 | Runtime | Google Colab (T4 GPU) |
+## Evaluation Visuals
 
+### Precision-Recall Curve
+![](results/curves/BoxPR_curve.png)
+
+### Confusion Matrix
+![](results/curves/confusion_matrix.png)
 ## Model Weights 
 The trained model weights (best.pt) are available here:
 [Download Model Weights] (https://github.com/aesawy83-ai/AI-Facade-Inspection/releases/tag/%23FMP)
