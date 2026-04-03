@@ -48,6 +48,7 @@ In the current repository, the practical focus is:
 - Can the detection evidence form a valid foundation for later BIM-linked workflow stages?
   
 ## Workflow Mapping
+
 | Workflow Stage | Status in this Repository | Evidence |
 |---|---|---|
 | Capture | Partially addressed | Roboflow dataset and façade image inputs |
