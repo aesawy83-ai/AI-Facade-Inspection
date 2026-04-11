@@ -76,19 +76,19 @@ version = project.version(1)
 # 🤖 Model Architecture
 
 The detector is trained using **Ultralytics YOLO11** in **Google Colab Pro (T4 GPU)**.
-##  Training Configuration
+##  Training Configuration & Engineering Rationale
 
 | **Parameter** | **Value** | **Description** |
 |:---:|:---:|:---:|
-| **Model** | YOLO11s | Lightweight high-accuracy baseline detector |
-| **Framework** | Ultralytics | Production-ready modern training ecosystem |
-| **Training Platform** | Google Colab | Cloud-native GPU experimentation workflow |
-| **GPU** | T4 High RAM | Efficient mid-scale deep learning acceleration |
-| **Epochs** | 50 | Balanced convergence and stability schedule |
-| **Image Size** | 640 | Standard object detection input resolution |
-| **Batch Size** | 16 | Stable memory-efficient gradient batching |
-| **Early Stopping** | patience = 20 | Prevents overfitting and wasted epochs |
-| **Notebook** | `notebooks/FMP_AI_Facade_Inspection.ipynb` | End-to-end reproducible training workflow |
+| **Model** | YOLO11s | Lightweight high-accuracy baseline detector for efficient experimentation |
+| **Framework** | Ultralytics | Production-ready modern training ecosystem with simplified deployment |
+| **Training Platform** | Google Colab | Cloud-native GPU experimentation workflow with easy reproducibility |
+| **GPU** | T4 High RAM | Efficient mid-scale deep learning acceleration for training |
+| **Epochs** | 50 | Balanced convergence, stability, and validation monitoring schedule |
+| **Image Size** | 640 | Standard object detection input resolution for façade imagery |
+| **Batch Size** | 16 | Stable memory-efficient gradient batching with good throughput |
+| **Early Stopping** | patience = 20 | Prevents overfitting, stagnation, and unnecessary training cycles |
+| **Notebook** | `notebooks/FMP_AI_Facade_Inspection.ipynb` | End-to-end reproducible training, validation, and inference workflow |
 
 ---
 
