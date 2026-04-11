@@ -1,31 +1,25 @@
-# Collaborative Workflow
+# 2) `collaborative_workflow.md`
+```md
+# 🤝 Collaborative Workflow
 
-This repository supports the **computer vision stream** of the Final Masters Project (FMP), which focuses on AI-enabled façade inspection and future digital twin integration.
+This document defines how dataset updates, notebook changes, and benchmark revisions are collaboratively managed.
 
-## Multidisciplinary Team Structure
-The wider FMP combines expertise from:
-- Computer Vision and Deep Learning
-- BIM / Revit Integration
-- Data Validation and Performance Evaluation
-- AECO Domain Knowledge
-- Asset Management and Maintenance Logic
+## Workflow Stages
+1. Dataset review
+2. Annotation update
+3. Roboflow version freeze
+4. Colab benchmark rerun
+5. Metrics validation
+6. GitHub documentation update
 
-## Current Repository Contribution
-This repository currently contributes the **Detect stage** of the full workflow by providing:
-- façade crack detection experiments
-- YOLOv8 training and validation notebooks
-- reproducible Google Colab workflow
-- PR curves, confusion matrix, and validation evidence
-- structured prediction samples for future BIM linkage
+## Team Rules
+- All class changes must update `class_definitions.md`
+- Every benchmark run must record dataset version
+- README metrics must match notebook outputs
+- Use pull requests for structural repo changes
 
-## Future Cross-Team Integration
-The outputs from this repository are intended to support future collaboration with:
-- BIM element mapping
-- Revit / IFC integration workflows
-- condition severity scoring
-- maintenance prioritization logic
-- digital twin condition intelligence dashboards
-
-## Workflow Relationship
-This repository acts as the **AI perception layer** of the broader FMP system:
-Capture → Detect → Structure → Integrate → Assess
+## Review Checklist
+- [ ] Dataset version recorded
+- [ ] Metrics reproducible
+- [ ] Visual evidence uploaded
+- [ ] Error analysis updated
