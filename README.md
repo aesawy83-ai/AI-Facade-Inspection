@@ -2,8 +2,6 @@
   <img src="assets/facade_banner_v2.png" width="100%">
 </p>
 
-<h1 align="center">🏢 AI-Facade-Inspection</h1>
-
 <p align="center">
   <b>AI-Enabled Multi-Class Façade Defect Detection for AECO Workflows</b>
 </p>
