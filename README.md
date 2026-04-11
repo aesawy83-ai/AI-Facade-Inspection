@@ -76,8 +76,6 @@ The dataset is publicly available on **Roboflow Universe**.
 
 ## 🧱 Defect Taxonomy
 
-## Defect Taxonomy
-
 | Class | Inspection Meaning |
 |---|---|
 | crack | façade cracks, fractures, and line defects |
