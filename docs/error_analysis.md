@@ -1,17 +1,33 @@
-# Error Analysis
+# 🔍 Error Analysis
 
-## False Positives
-1. Surface joints and façade panel edges occasionally resemble crack geometry.
-2. Strong shadow boundaries may trigger false crack detections.
-3. High-contrast stains or weathering marks can be misinterpreted as cracks.
+This document summarizes the major failure modes observed in current model validation.
 
-## False Negatives
-1. Hairline cracks with very low contrast are sometimes missed.
-2. Small crack fragments may be partially localized.
-3. Cracks under poor illumination or textured materials remain challenging.
+## Common Failure Patterns
+### ⚡ Wires
+- missed thin cables
+- confused with crack lines
+- low recall at distance
 
-## Prioritized Improvement Actions
-1. Expand the dataset with fine and low-contrast crack samples.
-2. Increase diversity across façade materials, camera angles, and lighting.
-3. Explore higher image resolution and longer training for thin-structure sensitivity.
-4. Evaluate confidence threshold tuning for better precision-recall balance.
+### 🪨 Crack
+- confusion with façade joints
+- false positives on shadows
+
+### 💧 Efflorescence
+- confused with bright paint regions
+- weak under glare
+
+### 🧱 Spalling
+- misses small detached patches
+- weak in low-resolution images
+
+## Root Causes
+- class imbalance
+- insufficient hard examples
+- image scale sensitivity
+- annotation ambiguity
+
+## Next Actions
+- [ ] add more wire samples
+- [ ] increase image size
+- [ ] upgrade to YOLO11m
+- [ ] refine class boundaries
