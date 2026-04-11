@@ -30,7 +30,7 @@ This computer vision baseline supports future **BIM-linked defect intelligence, 
 
 ---
 
-## 🔄 End-to-End Project Vision
+##  End-to-End Project Vision
 
 This repository currently focuses on the **detection layer** of the broader inspection intelligence pipeline:
 
@@ -38,14 +38,14 @@ This repository currently focuses on the **detection layer** of the broader insp
 
 ### Included in this repository
 
-* ✅ Reproducible Google Colab notebook
-* ✅ Roboflow dataset integration
-* ✅ YOLO11 training + validation
-* ✅ PR curves + confusion matrix
-* ✅ Sample predictions on unseen images
-* ✅ GitHub-ready project structure
-* ✅ Error analysis documentation
-* ✅ Release-ready model weights
+*  Reproducible Google Colab notebook
+*  Roboflow dataset integration
+*  YOLO11 training + validation
+*  PR curves + confusion matrix
+*  Sample predictions on unseen images
+*  GitHub-ready project structure
+*  Error analysis documentation
+*  Release-ready model weights
 
 ## Navigation Hub
 This hub provides quick access to both the **technical repository workflow** and the **research methodology documentation system**.
@@ -67,7 +67,7 @@ This hub provides quick access to both the **technical repository workflow** and
 
 ---
 
-# 🎯 Project Objective
+#  Project Objective
 
 Traditional façade inspection is often:
 
@@ -87,9 +87,9 @@ The long-term goal is to convert image detections into:
 
 ---
 
-# 🗂️ Dataset
+#  Dataset
 
-## 📍 Public Dataset Source
+##  Public Dataset Source
 
 The dataset is publicly available on **Roboflow Universe**.
 
@@ -99,11 +99,11 @@ The dataset is publicly available on **Roboflow Universe**.
 * **Export Format:** YOLO11
 * **Version Used:** `V1`
 
-### 🔗 Dataset Link
+###  Dataset Link
 
 [https://universe.roboflow.com/youniss-workspace-fic2t/m10-fmp-g2-facade-detection](https://universe.roboflow.com/youniss-workspace-fic2t/m10-fmp-g2-facade-detection)
 
-## 🧱 Defect Taxonomy
+##  Defect Taxonomy
 
 | Class | Inspection Meaning |
 |---|---|
@@ -112,7 +112,7 @@ The dataset is publicly available on **Roboflow Universe**.
 | spalling | surface material loss and concrete detachment |
 | wires | exposed service cables and visible electrical lines |
 
-## 🧪 Dataset Strategy
+##  Dataset Strategy
 
 The dataset follows standard **train / validation / test** splits to support:
 
@@ -133,7 +133,7 @@ version = project.version(1)
 
 The detector is trained using **Ultralytics YOLO11** in **Google Colab Pro (T4 GPU)**.
 
-## ⚙️ Training Configuration
+##  Training Configuration
 
 | Parameter | Value |
 |---|---:|
@@ -149,9 +149,9 @@ The detector is trained using **Ultralytics YOLO11** in **Google Colab Pro (T4 G
 
 ---
 
-# 📊 Results Summary
+#  Results Summary
 
-## 🌍 Overall Metrics
+##  Overall Metrics
 
 | Metric | Value |
 |---|---:|
@@ -160,7 +160,7 @@ The detector is trained using **Ultralytics YOLO11** in **Google Colab Pro (T4 G
 | Precision | 0.28 |
 | Recall | 0.21 |
 
-## 🧩 Class-wise AP@0.5
+##  Class-wise AP@0.5
 
 | Class | AP |
 |---|---:|
@@ -191,7 +191,7 @@ The detector is trained using **Ultralytics YOLO11** in **Google Colab Pro (T4 G
 
 ---
 
-# 🖼️ Sample Detection Outputs
+#  Sample Detection Outputs
 
 ## Validation Predictions
 
@@ -205,9 +205,9 @@ The detector is trained using **Ultralytics YOLO11** in **Google Colab Pro (T4 G
 
 ---
 
-# 🚀 Reproducibility Workflow (Google Colab)
+#  Reproducibility Workflow (Google Colab)
 
-## ▶️ Run Instructions
+##  Run Instructions
 
 1. Open notebook: `notebooks/FMP_AI_Facade_Inspection.ipynb`
 2. Set runtime → **GPU**
@@ -246,7 +246,7 @@ Generated artifacts:
 
 ---
 
-# 🗃️ Repository Structure
+#  Repository Structure
 
 ```text
 AI-Facade-Inspection/
@@ -279,7 +279,7 @@ AI-Facade-Inspection/
 
 ---
 
-# 📦 Model Weights
+#  Model Weights
 
 The final trained **YOLO11s multi-class façade defect detector** is available via GitHub Releases.
 
@@ -287,7 +287,7 @@ link: [Download YOLO11s.pt model weights](https://github.com/aesawy83-ai/AI-Faca
 
 ---
 
-# 🔍 Error Analysis
+#  Error Analysis
 
 Detailed failure analysis:
 
@@ -303,7 +303,7 @@ Typical failure patterns:
 
 ---
 
-# ⚠️ Limitations
+#  Limitations
 
 This repository is a **research and academic prototype**.
 
@@ -314,8 +314,6 @@ Current limitations:
 * no severity estimation yet
 * no BIM element linkage yet
 * requires engineering review before use
-
-⚠️ **Not intended as a standalone structural safety decision tool.**
 
 ---
 
@@ -333,7 +331,7 @@ This work combines:
 
 ---
 
-## 🛣️ Roadmap
+##  Roadmap
 
 ### Phase 1 — Detection
 - [x] Multi-class YOLO11 baseline
@@ -355,7 +353,7 @@ This work combines:
 
 # 📄 License
 
-**MIT License**
+**Group_2 License**
 
 ---
 
