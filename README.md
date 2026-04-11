@@ -62,21 +62,7 @@ This hub provides quick access to both the **technical repository workflow** and
 
 ## Methodology Pipeline
 
-```mermaid
-flowchart LR
-    subgraph CV[🧠 Computer Vision Layer]
-        A[📸 Capture] --> B[YOLO11 Detect]
-        B --> C[Defect Structuring]
-    end
 
-    subgraph AECO[🏗️ AECO Intelligence Layer]
-        C --> D[BIM Integration]
-        D --> E[Digital Twin]
-        E --> F[Lifecycle Assessment]
-    end
-
-    B --> G[📈 Benchmark KPIs]
-```
 ---
 
 # 🎯 Project Objective
