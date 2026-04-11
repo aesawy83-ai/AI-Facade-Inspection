@@ -1,3 +1,21 @@
+<p align="center">
+  <img src="assets/facade_banner_v2.png" width="100%">
+</p>
+
+<h1 align="center">🏢 AI-Facade-Inspection</h1>
+<p align="center"><b>AI-Enabled Multi-Class Façade Defect Detection for AECO Workflows</b></p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10+-blue">
+  <img src="https://img.shields.io/badge/YOLO-11-success">
+  <img src="https://img.shields.io/badge/Roboflow-V1-orange">
+  <img src="https://img.shields.io/badge/Colab-T4-yellow">
+  <img src="https://img.shields.io/badge/Status-Research%20WIP-purple">
+</p>
+
+
+
+
 # 🏢 AI-Facade-Inspection
 ## AI-Enabled Multi-Class Façade Defect Detection for Inspection and Digital Twin Integration
 
