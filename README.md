@@ -47,18 +47,18 @@ This repository currently focuses on the **detection layer** of the broader insp
 * ✅ Error analysis documentation
 * ✅ Release-ready model weights
 
-## 📌 Navigation Hub
+## Navigation Hub
 This hub provides quick access to both the **technical repository workflow** and the **research methodology documentation system**.
 
 | 🚀 Technical Repository Navigation | 📚 Research Documentation Hub |
 |---|---|
-| [Project Objective](#-project-objective) | [ Documentation Overview](docs/README.md) |
-| [Dataset and Defect Taxonomy](#-dataset) | [ Problem Framing and Context](docs/problem_framing.md) |
-| [Model Architecture and Training Setup](#️-model-architecture) | [ Research Question and Evaluation Lens](docs/research_question.md) |
-| [Results Summary and Benchmark KPIs](#-results-summary) | [ Class Definitions and Annotation Logic](docs/class_definitions.md) |
-| [Evaluation Curves and Visual Evidence](#-evaluation-visual-evidence) | [ Dataset Strategy and Growth Plan](docs/dataset_strategy.md) |
-| [Reproducibility Workflow in Colab](#-reproducibility-workflow-google-colab) | [ Error Analysis and Failure Modes](docs/error_analysis.md) |
-| [Repository Structure and Artifacts](#-repository-structure) | [ Future BIM and Digital Twin Integration](docs/future_integration.md) |
+| [🎯 Project Objective](#-project-objective) | [📖 Documentation Overview](docs/README.md) |
+| [🗂️ Dataset and Defect Taxonomy](#-dataset) | [🧩 Problem Framing and Context](docs/problem_framing.md) |
+| [🏗️ Model Architecture and Training Setup](#️-model-architecture) | [❓ Research Question and Evaluation Lens](docs/research_question.md) |
+| [📊 Results Summary and Benchmark KPIs](#-results-summary) | [🏷️ Class Definitions and Annotation Logic](docs/class_definitions.md) |
+| [📈 Evaluation Curves and Visual Evidence](#-evaluation-visual-evidence) | [🗃️ Dataset Strategy and Growth Plan](docs/dataset_strategy.md) |
+| [🔍 Error Analysis and Failure Modes](#-error-analysis) | [🔮 Future BIM and Digital Twin Integration](docs/future_integration.md) |
+| [🧱 Repository Structure and Artifacts](#-repository-structure) | [⚖️ Governance and Validation Checklist](docs/governance_checklist.md) |
 
 ---
 
