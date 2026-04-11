@@ -333,16 +333,23 @@ This work combines:
 
 ---
 
-# 🛣️ Future Roadmap
+## 🛣️ Roadmap
 
-* [ ] improve weak-class recall
-* [ ] crack width quantification
-* [ ] severity scoring
-* [ ] BIM / Revit linking
-* [ ] IFC object tagging
-* [ ] JSON defect schema
-* [ ] digital twin dashboard
-* [ ] condition trend analytics
+### Phase 1 — Detection
+- [x] Multi-class YOLO11 baseline
+- [x] Roboflow dataset pipeline
+- [x] Colab reproducibility
+- [x] GitHub documentation system
+
+### Phase 2 — Structuring
+- [ ] JSON defect schema
+- [ ] severity scoring
+- [ ] asset tagging
+
+### Phase 3 — BIM / Digital Twin
+- [ ] IFC mapping
+- [ ] dashboard visualization
+- [ ] lifecycle analytics
 
 ---
 
