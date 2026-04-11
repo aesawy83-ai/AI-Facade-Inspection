@@ -121,6 +121,3 @@ This supports:
 
 ## Dataset Version Control
 The Colab notebook uses:
-
-```python
-version = project.version(1)
