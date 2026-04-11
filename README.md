@@ -40,18 +40,6 @@ This repository currently focuses on the **detection layer** of the broader insp
   <img src="assets/banner_01.png" width="100%">
 </p>
 
-
-### Included in this repository
-
-*  Reproducible Google Colab notebook
-*  Roboflow dataset integration
-*  YOLO11 training + validation
-*  PR curves + confusion matrix
-*  Sample predictions on unseen images
-*  GitHub-ready project structure
-*  Error analysis documentation
-*  Release-ready model weights
-
 ## Navigation Hub
 This hub provides quick access to both the **technical repository workflow** and the **research methodology documentation system**.
 
