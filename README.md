@@ -79,17 +79,17 @@ The detector is trained using **Ultralytics YOLO11** in **Google Colab Pro (T4 G
 
 ##  Training Configuration
 
-| Parameter | Value |
-|---|---:|
-| Model | YOLO11s |
-| Framework | Ultralytics |
-| Training Platform | Google Colab |
-| GPU | T4 High RAM |
-| Epochs | 50 |
-| Image Size | 640 |
-| Batch Size | 16 |
-| Early Stopping | patience = 20 |
-| Notebook | `notebooks/FMP_AI_Facade_Inspection.ipynb` |
+| Parameter | Value | Description |
+|---|---:|---|
+| **Model** | YOLO11s | Lightweight high-accuracy baseline |
+| **Framework** | Ultralytics | Production-ready training ecosystem |
+| **Training Platform** | Google Colab | Cloud GPU experimentation environment |
+| **GPU** | T4 High RAM | Efficient mid-scale acceleration |
+| **Epochs** | 50 | Balanced convergence schedule |
+| **Image Size** | 640 | Standard detection resolution |
+| **Batch Size** | 16 | Stable memory-efficient batching |
+| **Early Stopping** | patience = 20 | Prevents overfitting stagnation |
+| **Notebook** | `notebooks/FMP_AI_Facade_Inspection.ipynb` | Full reproducibility workflow |
 
 ---
 
