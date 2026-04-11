@@ -135,12 +135,12 @@ The detector is trained using **Ultralytics YOLO11** in **Google Colab Pro (T4 G
 
 ## 🧩 Class-wise AP@0.5
 
-| Class         |   AP |
-| ------------- | ---: |
-| crack         | 0.XX |
-| efflorescence | 0.XX |
-| spalling      | 0.XX |
-| wires         | 0.XX |
+| Class | AP |
+|---|---:|
+| crack | 0.354 |
+| efflorescence | 0.148 |
+| spalling | 0.155 |
+| wires | 0.056 |
 
 ---
 
