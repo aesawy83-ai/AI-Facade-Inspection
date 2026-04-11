@@ -61,12 +61,16 @@ This hub provides quick access to both the **technical repository workflow** and
 | [ Repository Structure and Artifacts](#-repository-structure) | [ Governance and Validation Checklist](docs/governance_checklist.md) |
 
 ## Methodology Pipeline
+
 ```mermaid
 flowchart LR
-A[Capture] --> B[Detect]
-B --> C[Structure]
-C --> D[Integrate]
-D --> E[Assess]
+    A[📸 Capture<br/>Inspection Images] --> B[🧠 Detect<br/>YOLO11 Multi-Class Defects]
+    B --> C[🗂️ Structure<br/>Defect Metadata + Classes]
+    C --> D[🏗️ Integrate<br/>BIM / IFC / Asset Mapping]
+    D --> E[📊 Assess<br/>Lifecycle Risk + Maintenance]
+
+    B --> F[📈 Benchmark<br/>PR Curves + AP Metrics]
+    D --> G[🌐 Digital Twin<br/>Condition Intelligence]
 ```
 ---
 
