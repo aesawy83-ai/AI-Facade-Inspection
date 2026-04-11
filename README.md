@@ -44,6 +44,18 @@ This repository currently focuses on the **detection layer** of the broader insp
 - [Evaluation Visual Evidence](#evaluation-visual-evidence)
 - [Reproducibility Workflow](#reproducibility-workflow-google-colab)
 - [Repository Structure](#repository-structure)
+
+- ## Documentation Hub
+
+For methodology, governance, and research framing, see:
+
+- [Docs Hub](docs/README.md)
+- [Problem Framing](docs/problem_framing.md)
+- [Research Question](docs/research_question.md)
+- [Class Definitions](docs/class_definitions.md)
+- [Dataset Strategy](docs/dataset_strategy.md)
+- [Error Analysis](docs/error_analysis.md)
+- [Future Integration](docs/future_integration.md)
 ---
 
 # 🎯 Project Objective
