@@ -53,7 +53,7 @@ The dataset is publicly available on **Roboflow Universe**.
 ##  Defect Taxonomy
 
 | Class | Inspection Meaning |
-|---|---|
+|---   |   ---|
 |  crack |    façade cracks, fractures, and line defects |
 |  efflorescence |    moisture-related salt deposits and white staining |
 |  spalling |    surface material loss and concrete detachment |
