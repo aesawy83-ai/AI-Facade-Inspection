@@ -1,4 +1,4 @@
-# 🗂️ Repository Guide
+#  Repository Guide
 
 This document explains the **information architecture, folder responsibilities, artifact flow, and reviewer navigation path** of the **AI-Facade-Inspection** repository.
 
