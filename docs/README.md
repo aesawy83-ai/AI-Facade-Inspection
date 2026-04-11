@@ -84,34 +84,4 @@ This sequence follows the logic from **problem → data → benchmark → govern
 
 ---
 
-# 🚀 Contribution Rules
-
-When updating this repository:
-
-* update related docs whenever dataset classes change
-* benchmark metrics must match notebook outputs
-* all new dataset versions must be documented
-* future BIM integration changes must update `future_integration.md`
-* major workflow changes should be reflected in this hub index
-
----
-
-# 📌 Why This Hub Matters
-
-This documentation hub improves:
-
-* reviewer navigation
-* thesis defense clarity
-* GitHub portfolio professionalism
-* collaboration readiness
-* future publication potential
-* long-term maintainability
-
-It transforms the repository from a notebook project into a **methodologically governed research platform**.
-
----
-
-# 👤 Maintainer
-
-**Group_2**
 
