@@ -14,6 +14,10 @@ This document explains the data curation and growth strategy for façade defect 
 - small distant cracks
 - shadow-heavy façades
 - low-resolution images
+## See also:
+- [Class Definitions](class_definitions.md)
+- [Error Analysis](error_analysis.md)
+- [Governance Checklist](governance_checklist.md)
 
 ## Expansion Roadmap
 - [ ] more night imagery
