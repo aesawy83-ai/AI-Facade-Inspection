@@ -61,7 +61,9 @@ This hub provides quick access to both the **technical repository workflow** and
 | [ Repository Structure and Artifacts](#-repository-structure) | [ Governance and Validation Checklist](docs/governance_checklist.md) |
 
 ## Methodology Pipeline
-
+<p align="center">
+  <img src="assets/banner_01.png" width="100%">
+</p>
 
 ---
 
