@@ -10,6 +10,15 @@
 This repository presents the **Detect stage** of an AI-enabled façade inspection workflow developed for a **Master-level Final Project**.
 Using a **YOLO11-based multi-class object detection pipeline** trained in **Google Colab** with a **public Roboflow dataset**, the system automatically detects visible façade defects from inspection imagery.
 
+## Quick Navigation
+- [Project Objective](#project-objective)
+- [Dataset](#dataset)
+- [Model Architecture](#model-architecture)
+- [Results Summary](#results-summary)
+- [Evaluation Visual Evidence](#evaluation-visual-evidence)
+- [Reproducibility Workflow](#reproducibility-workflow-google-colab)
+- [Repository Structure](#repository-structure)
+
 ### ✅ Currently Detected Defect Classes
 
 * **Crack**
