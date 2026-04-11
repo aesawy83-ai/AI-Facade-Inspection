@@ -204,39 +204,6 @@ Generated artifacts:
 
 ---
 
-#  Repository Structure
-
-```text
-AI-Facade-Inspection/
-│
-├── README.md
-├── assets/
-│   └── facade_banner_v2.png
-│
-├── notebooks/
-│   └── FMP_AI_Facade_Inspection.ipynb
-│
-├── docs/
-│   ├── README.md
-│   ├── class_definitions.md
-│   ├── collaborative_workflow.md
-│   ├── dataset_strategy.md
-│   ├── error_analysis.md
-│   ├── future_integration.md
-│   ├── governance_checklist.md
-│   ├── problem_framing.md
-│   └── research_question.md
-│
-├── results/
-│   ├── curves/
-│   ├── evidence/
-│   ├── predictions_new/
-│   ├── predictions_val/
-│   └── final_metrics.md
-```
-
----
-
 #  Model Weights
 
 The final trained **YOLO11s multi-class façade defect detector** is available via GitHub Releases.
