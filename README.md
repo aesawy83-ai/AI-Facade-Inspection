@@ -1,138 +1,100 @@
 # AI-Facade-Inspection
-## AI-Enabled Workflow for Façade Defect Mapping and Digital Twin Integration
+## AI-Enabled Multi-Class Façade Defect Detection for Inspection and Digital Twin Integration
 
-This project addresses the gap between manual façade inspection and BIM-integrated digital twin workflows. The aim is to transform façade imagery into structured, traceable condition information that can support maintenance planning and future digital twin integration.
-The current repository implements the **Detect** stage of the workflow using a YOLOv11-based crack detection pipeline. Future stages will extend this toward structured outputs, BIM association, and condition-aware asset records.
-## Dataset & Model Summary
+This repository presents the **Detect stage** of an AI-enabled façade inspection workflow developed for the **Final Master Project (FMP)**.
 
-| Metric | Value |
-|------|------|
-| Task | Single-Class Crack Detection |
-| Domain | Façade Inspection |
-| Model | YOLOv11s |
-| Epochs | 50 |
-| Image Size | 640 |
-| Batch Size | 16 |
-| mAP@0.5 | XXXX |
-| Runtime | Google Colab T4 |
+The project uses a **YOLO11-based multi-class object detection pipeline** trained in **Google Colab** using a **Roboflow-managed dataset** to automatically identify visible façade defects from inspection imagery.
 
-## Workflow Stages
-1. Capture - source-agnostic image acquisition
-2. Detect - AI-based façade defect localisation
-3. Structure - convert detections into structured measurable outputs
-4. Integrate - associate outputs with BIM/model elements
-5. Assess - support condition tracking and maintenance decisions
+The system currently detects:
 
-## Current Scope
-This repository currently focuses on the **Detect** stage of the proposed workflow.
+- Crack
+- Efflorescence
+- Spalling
+- Exposed wires
 
-### Implemented
-- Single-class façade crack detection using YOLOv11
-- Google Colab reproducibility workflow
-- Validation metrics, PR curve, confusion matrix, and prediction evidence
+The broader project vision is to support a full workflow:
+
+> **Capture → Detect → Structure → Integrate → Assess**
+
+This repository currently focuses on the **detection layer**, providing:
+- reproducible notebook training
+- validation metrics
+- prediction visualizations
+- model weights
+- error analysis
+- deployment-ready repository structure
+
+---
+
+# Project Objective
+
+Façade inspection in existing buildings is often:
+- labor intensive
+- visually subjective
+- difficult to scale
+- weakly documented across time
+
+This project explores how **computer vision + object detection** can support a more scalable and evidence-driven inspection workflow.
+
+The objective is to automatically detect and localize visible façade defects from images so the results can later be linked to:
+- condition registers
+- BIM elements
+- maintenance prioritization
+- digital twin environments
+- lifecycle decision support
+
+---
+
+# Current Implemented Scope
+
+## Included in this Repository
+This version implements:
+
+- Multi-class façade defect detection
+- YOLO11 training and validation in Google Colab
 - Roboflow dataset integration
+- Precision–Recall evaluation
+- confusion matrix analysis
+- sample predictions on unseen images
+- GitHub-hosted reproducibility workflow
 
-### Planned Future Extensions
-- Crack width estimation and structured defect parameters
-- Confidence-aware output schema (JSON / CSV)
-- BIM / Revit element association
-- Condition-aware digital twin integration
+## Planned Next Stages
+Future work will extend this detector into:
 
-## Research Focus
-The broader project investigates whether an image-based façade inspection pipeline can provide reliable, decision-support condition data suitable for future BIM-based digital twin integration.
-In the current repository, the practical focus is:
-- Can YOLOv11 reliably detect façade cracks on held-out images?
-- Can the detection pipeline be reproduced by a third party in Google Colab?
-- Can the detection evidence form a valid foundation for later BIM-linked workflow stages?
-  
-## Workflow Mapping
+- defect severity scoring
+- crack width estimation
+- CSV / JSON structured outputs
+- BIM element mapping
+- Revit / IFC integration
+- digital twin synchronization
+- maintenance risk ranking
 
-| Workflow Stage | Status in this Repository | Evidence |
-|---|---|---|
-| Capture | Partially addressed | Roboflow dataset and façade image inputs |
-| Detect | Implemented | YOLOv11s notebook, metrics, PR curve, confusion matrix |
-| Structure | Planned | future structured output schema |
-| Integrate | Planned | future BIM / Revit association workflow |
-| Assess | Planned | future condition intelligence and maintenance reporting |
+---
 
-## Dataset
+# Dataset
 
-Source: Roboflow  
-Project: facade-cracks  
-Format: YOLOv11 
-Split: 80% Train / 20% Validation  
-Classes: crack  
-Dataset link : (https://app.roboflow.com/youniss-workspace-fic2t/m10-fmp-g2-facade-detection/3)
+## Source
+The dataset is managed using **Roboflow** and exported in **YOLO11 format**.
 
-## Model Configuration
+- Platform: Roboflow
+- Format: YOLO11
+- Split: Train / Validation / Test
+- Export Type: Object Detection
 
-Model: YOLOv11s  
-Epochs: 50  
-Image size: 640  
-Batch size: 16  
-Runtime: Google Colab (T4 GPU)
+## Defect Classes
+The current detector supports **4 façade defect classes**:
 
-All annotations were reviewed for consistency.
-
-## Results Summary
-
-Final Performance:
-| Metric | Value |
+| Class | Description |
 |---|---|
-| Model | YOLOv11s |
-| Task | Single-Class Crack Detection |
-| mAP@0.5 | 0.825 |
-| Epochs | 50 |
-| Image Size | 640 |
-| Batch Size | 16 |
-| Runtime | Google Colab (T4 GPU) |
+| crack | visible façade cracking and line fractures |
+| efflorescence | salt deposits / moisture-related staining |
+| spalling | concrete cover loss / surface material detachment |
+| wires | exposed cables or façade service lines |
 
-## Evaluation Visuals
+## Dataset Access
+Dataset access is controlled through Roboflow workspace permissions.
 
-### Precision-Recall Curve
-![](results/curves/BoxPR_curve.png)
+If public release is allowed, add the dataset URL here.
 
-### Confusion Matrix
-![](results/curves/confusion_matrix.png)
-
-## Sample Detection Results
-
-| Validation 1 | Validation 2 | New Image 1 |
-|---|---|---|
-| ![](results/predictions_val/val1.jpg) | ![](results/predictions_val/val2.jpg) | ![](results/predictions_new/new1.jpg) |
-
-## Model Weights 
-The trained model weights (`best.pt`) are available here: [Download Model Weights](https://github.com/aesawy83-ai/AI-Facade-Inspection/releases/tag/%23FMP)
-
-## Reproduce in Google Colab
-
-1. Open `notebooks/ AI-Facade-Inspection.ipynb`  in Colab.
-2. Runtime → Change runtime type → GPU.
-3. Run all cells.
-4. Training outputs will be saved in `/runs/detect/`.
-
-## Reproducibility Proof
-
-Last successful run: [3/4/2026]  
-Runtime: Google Colab (T4 GPU)  
-Epochs: 50  
-Model: YOLOv11s  
-Classes: crack 
-Expected runtime: ~15–20 minutes
-
-## Evidence
-
-Training curves: `/results/curves/`  
-Validation predictions: `/results/predictions_val/`  
-New image predictions: `/results/predictions_new/`
-
-## Governance & Limitations
-
-This model is intended for inspection assistance only.
-Human validation is required before structural decisions.
-
-See:
-- `/docs/error_analysis.md`
-- `/docs/governance_checklist.md`
-
-
+```text
+Dataset link: [Insert Roboflow public version link]
