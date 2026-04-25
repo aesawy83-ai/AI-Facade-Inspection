@@ -2,7 +2,7 @@
 
 This document summarizes the major failure modes observed in current model validation.
 
-## Common Failure Patterns
+## Common Failure Patterns 
 ###⚡ Wires
 - missed thin cables
 - confused with crack lines
