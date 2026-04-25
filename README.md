@@ -232,9 +232,9 @@ Current limitations:
 - [x] GitHub documentation system
 
 ### Phase 2 — Structuring
-- [ ] JSON defect schema
-- [ ] severity scoring
-- [ ] asset tagging
+- [x] JSON defect schema
+- [x] severity scoring
+- [x] asset tagging
 
 ### Phase 3 — BIM / Digital Twin
 - [ ] IFC mapping
