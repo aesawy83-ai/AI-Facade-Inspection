@@ -46,7 +46,7 @@ The dataset is publicly available on **Roboflow Universe**.
 * **Export Format:** YOLO11
 * **Version Used:** `V1`
 
-###  Link [[https://universe.roboflow.com/youniss-workspace-fic2t/m10-fmp-g2-facade-detection](https://universe.roboflow.com/youniss-workspace-fic2t/m10-fmp-g2-facade-detection)](https://universe.roboflow.com/yunisss-workspace/facade-condition-intelligence)
+###  Link https://universe.roboflow.com/yunisss-workspace/facade-condition-intelligence
 
 ##  Defect Taxonomy
 
