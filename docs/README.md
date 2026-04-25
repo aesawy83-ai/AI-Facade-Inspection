@@ -1,5 +1,5 @@
 
-#  Documentation Hub - AI-Facade-Inspection
+#  Documentation Hub - AI-Facade-Inspection 
 
 Welcome to the **documentation and methodology hub** for the AI-Facade-Inspection project.
 
