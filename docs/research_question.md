@@ -1,4 +1,4 @@
-#  Research Question
+#  Research Question 
 
 ## Primary Research Question
 How effectively can a YOLO11-based multi-class object detection pipeline identify façade defects from inspection imagery to support scalable condition assessment workflows?
