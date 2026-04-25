@@ -6,7 +6,7 @@ The current baseline **YOLO11 multi-class façade defect detector** demonstrates
 
 | Metric | Value |
 |---|---:|
-| mAP@0.5 | 0.178 |
+| mAP@0.5 | 0.166 |
 | mAP@0.5:0.95 | 0.090 |
 | Precision | 0.280 |
 | Recall | 0.210 |
@@ -15,10 +15,10 @@ The current baseline **YOLO11 multi-class façade defect detector** demonstrates
 
 | Class | AP |
 |---|---:|
-| crack | 0.354 |
-| efflorescence | 0.148 |
-| spalling | 0.155 |
-| wires | 0.056 |
+| crack | 0.232 |
+| efflorescence | 0.086|
+| spalling | 0.270 |
+| wires | 0.077 |
 
 ### Performance Interpretation
 The current model demonstrates the strongest feature learning for **cracks**, benefiting from clearer linear morphology and stronger representation in the dataset.  
