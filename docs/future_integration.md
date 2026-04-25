@@ -1,4 +1,4 @@
-#  Future Integration
+#  Future Integration 
 
 This document outlines how the detector will connect to BIM and digital twin workflows.
 
