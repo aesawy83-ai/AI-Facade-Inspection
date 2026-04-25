@@ -1,4 +1,4 @@
-#  Governance Checklist
+#  Governance Checklist 
 
 Governance rules for academic reliability and responsible AI use.
 
