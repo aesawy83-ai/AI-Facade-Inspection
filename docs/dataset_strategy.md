@@ -1,6 +1,6 @@
 #  Dataset Strategy
 
-This document explains the data curation and growth strategy for façade defect detection.
+This document explains the data curation and growth strategy for façade defect detection. 
 
 ## Current Dataset Goals
 - maximize class balance
