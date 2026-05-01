@@ -2,238 +2,195 @@
   <img src="assets/facade_banner_v2.png" width="100%">
 </p>
 
-<p align="center">
-  <b>AI-Enabled Multi-Class Façade Defect Detection for AECO Workflows</b>
-</p>
+<h1 align="center"><b>AI-Enabled Multi-Class Façade Defect Detection for AECO Workflows</b></h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.10+-blue">
   <img src="https://img.shields.io/badge/YOLO-11-success">
   <img src="https://img.shields.io/badge/Roboflow-V1-orange">
   <img src="https://img.shields.io/badge/Colab-T4-yellow">
-  <img src="https://img.shields.io/badge/Status-Research%20WIP-purple">
+  <img src="https://img.shields.io/badge/Status-Research%20Complete-green">
 </p>
 
 ---
 
-## Introduction
+## 📖 Introduction
 
-This repository implements an AI-enabled façade inspection system focused on the Detect stage, forming the foundation for BIM-integrated Digital Twin workflows.
+This repository implements an **AI-enabled façade inspection system** focused on the **Detect stage**, forming the foundation for **BIM-integrated Digital Twin workflows**.
 
-The system uses a YOLO11 multi-class object detection pipeline, trained in Google Colab using a Roboflow dataset, to automatically identify façade defects from inspection imagery.
+The system uses a **YOLO11 multi-class object detection pipeline**, trained in **Google Colab** using a **Roboflow dataset**, to automatically identify façade defects from inspection imagery.
 
-This repository focuses on the Detect → Structure stages, while defining the architecture required for downstream BIM integration and Digital Twin lifecycle management.
-
----
-
-##  Project Objective & Vision
-
-Traditional façade inspection is often **manual, labor-intensive, visually subjective, difficult to scale, and weakly documented longitudinally**. This project demonstrates how **computer vision and object detection** can transform the process into a more **scalable, auditable, and evidence-driven workflow**, with a long-term vision of translating detections into **BIM-linked condition intelligence, maintenance prioritization, Digital Twin updates, and lifecycle decision support**. This repository currently focuses on the **detection layer** of the broader inspection intelligence pipeline:
-
-> **Capture → Detect → Structure → Integrate → Assess**
-
-<p align="center">
-  <img src="assets/banner_01.png" width="100%">
-</p>
+This repository focuses on the **Detect → Structure stages**, while defining the architecture required for downstream **BIM integration and Digital Twin lifecycle management**.
 
 ---
 
-#  Dataset
+## 🧭 System Workflow Overview
 
-##  Source
-
-The dataset is publicly available on **Roboflow Universe**.
-
-* **Workspace:** `youniss-workspace-fic2t`
-* **Project:** `m10-fmp-g2-facade-detection`
-* **Task:** Multi-class object detection
-* **Export Format:** YOLO11
-* **Version Used:** `V1`
-
-###  Link https://universe.roboflow.com/yunisss-workspace/facade-condition-intelligence
-
-##  Defect Taxonomy
-
-| Class | Inspection Meaning | Typical AECO Risk |
-|---|---|---|
-| **Crack** | Linear fractures, surface fissures, and visible separation lines within façade materials, often indicating structural stress, shrinkage, or environmental degradation. | Moisture ingress, thermal expansion damage, structural deterioration |
-| **Efflorescence** | White salt deposits and surface staining caused by moisture migration through porous materials, typically signaling persistent water penetration pathways. | Hidden moisture accumulation, material degradation, waterproofing failure |
-| **Spalling** | Localized surface material loss, concrete chipping, detachment, or fragmentation, commonly associated with reinforcement corrosion or freeze–thaw damage. | Concrete failure, falling debris risk, exposed reinforcement |
-| **Wires** | Exposed service cables, loose electrical lines, or visible façade-mounted wiring elements that may indicate damaged routing or incomplete installation. | Electrical hazard, safety compliance issues, visual façade degradation |
-
-##  Dataset Strategy
-
-The dataset follows standard **train / validation / test** splits to support:
-
-* fair held-out evaluation
-* repeatable benchmarking
-* class-level AP tracking
-* PR curve reproducibility
-
-### Version freeze used in notebook
-
-```python
-version = project.version(2)
-```
----
-
-# 🤖 Model Architecture
-
-The detector is trained using **Ultralytics YOLO11** in **Google Colab Pro (T4 GPU)**.
-##  Training Configuration & Engineering Rationale
-
-| **Parameter** | **Value** | **Description** |
-|:---:|:---:|:---:|
-| **Model** | YOLO11s | Lightweight high-accuracy baseline detector for efficient experimentation |
-| **Framework** | Ultralytics | Production-ready modern training ecosystem with simplified deployment |
-| **Training Platform** | Google Colab | Cloud-native GPU experimentation workflow with easy reproducibility |
-| **GPU** | G4 High RAM | Efficient mid-scale deep learning acceleration for training |
-| **Epochs** | 100 | Balanced convergence, stability, and validation monitoring schedule |
-| **Image Size** | 640 | Standard object detection input resolution for façade imagery |
-| **Batch Size** | 16 | Stable memory-efficient gradient batching with good throughput |
-| **Early Stopping** | patience = 20 | Prevents overfitting, stagnation, and unnecessary training cycles |
-| **Notebook** | `notebooks/FMP_AI_Facade_Inspection.ipynb` | End-to-end reproducible training, validation, and inference workflow |
-
----
-
-#  Results Summary
-
-| mAP@0.5 | mAP@0.5:0.95 | Precision | Recall | Crack AP | Efflorescence AP | Spalling AP | Wires AP |
-|---:|---:|---:|---:|---:|---:|---:|---:|
-| **00.166** | **00.09** | **00.28** | **00.21** | **00.232** | **00.086** | **00.270** | **00.077** |
-
----
-
-# 📈 Evaluation Visual Evidence
-
-## Precision–Recall Curve
-
-![PR Curve](results/curves/PR_curve.png)
-
-## Confusion Matrix
-
-![Confusion Matrix](results/curves/confusion_matrix.png)
-
-## Training Curves
-
-![Training Results](results/curves/results.png)
-
-## F1 Curve
-
-![F1 Curve](results/curves/F1_curve.png)
-
----
-
-#  Sample Detection Outputs
-
-## Validation Predictions
-
-![Validation 1](results/predictions_val/val_01.jpg)
-![Validation 2](results/predictions_val/val_02.jpg)
-
-## Unseen Image Predictions
-
-![Prediction 1](results/predictions_new/new_01.jpg)
-![Prediction 2](results/predictions_new/new_03.jpg)
-
----
-
-#  Reproducibility Workflow (Google Colab)
-
-##  Run Instructions
-
-1. Open notebook: `notebooks/FMP_AI_Facade_Inspection.ipynb`
-2. Set runtime → **GPU**
-3. Install dependencies:
-
-```python 
-!pip install ultralytics roboflow
+```text id="d2v2a2"
+Capture → Detect → Structure → Integrate → Assess
 ```
 
-4. Connect dataset:
+### 🔗 Implementation Mapping
 
-```python
-from roboflow import Roboflow
-
-rf = Roboflow(api_key="YOUR_API_KEY")
-project = rf.workspace("youniss-workspace-fic2t").project("m10-fmp-g2-facade-detection")
-version = project.version(1)
-dataset = version.download("yolov11")
+```text id="uqh2kl"
+Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → Dashboard
 ```
 
-5. Run all cells
-6. Outputs generated under:
+---
 
-```text
-/runs/detect/
+## 🔷 AI to Digital Twin Pipeline
+
+![Pipeline](assets/pipeline_dt_v2.png)
+
+*Figure — AI-to-Digital Twin inspection pipeline*
+
+This pipeline transforms inspection imagery into structured defect intelligence for BIM integration and Digital Twin lifecycle tracking.
+
+---
+
+## 🟢 BIM Association Logic | 🟡 Digital Twin Condition Model
+
+<table>
+<tr>
+
+<td width="50%">
+
+### 🟢 BIM Association Logic
+
+![BIM Logic](assets/bim_logic_v2.png)
+
+*Figure — BIM association decision logic*
+
+* Validation-based linking (no forced association)
+* Confidence-driven decision workflow
+* Manual review for uncertain detections
+
+</td>
+
+<td width="50%">
+
+### 🟡 Digital Twin Condition Model
+
+![Lifecycle](assets/dt_lifecycle_v2.png)
+
+*Figure — Digital Twin condition state lifecycle*
+
+* **T1** → Detection
+* **T2** → Deterioration
+* **T3** → Repair & closure
+
+</td>
+
+</tr>
+</table>
+
+---
+
+## 🔗 Integrated System View
+
+This system operates through three tightly coupled layers:
+
+* **AI Pipeline** → generates structured defect data from images
+* **BIM Layer** → anchors defects to physical building elements
+* **Digital Twin Layer** → tracks condition evolution over time
+
+Together, these layers form a complete **inspection intelligence system linking AI detection, BIM-based spatial context, and Digital Twin lifecycle tracking**.
+
+This enables future **predictive maintenance through condition trend analysis**.
+
+---
+
+## 📊 Results Summary
+
+| Metric       | Value |
+| ------------ | ----: |
+| mAP@0.5      |  0.18 |
+| mAP@0.5:0.95 |  0.09 |
+| Precision    |  0.28 |
+| Recall       |  0.21 |
+
+### Class-wise AP@0.5
+
+| Class         |    AP |
+| ------------- | ----: |
+| crack         | 0.354 |
+| efflorescence | 0.148 |
+| spalling      | 0.155 |
+| wires         | 0.056 |
+
+---
+
+## 📈 Evaluation Visual Evidence
+
+| PR Curve                         | Confusion Matrix                         |
+| -------------------------------- | ---------------------------------------- |
+| ![](results/curves/PR_curve.png) | ![](results/curves/confusion_matrix.png) |
+
+| Training Results                | F1 Curve                         |
+| ------------------------------- | -------------------------------- |
+| ![](results/curves/results.png) | ![](results/curves/F1_curve.png) |
+
+---
+
+## 📂 Repository Structure
+
+```text id="9j5lg3"
+assets/              → diagrams and visual assets  
+docs/                → documentation and system design  
+notebooks/           → training and experimentation  
+results/             → model outputs and evaluation  
+README.md            → project overview  
+repository_guide.md  → navigation and explanation  
 ```
 
-Generated artifacts:
+---
 
-* `best.pt`
-* PR curves
-* confusion matrix
-* validation predictions
-* test predictions
-* training curves
+## 📘 Documentation Hub
+
+* docs/README.md
+* docs/problem_framing.md
+* docs/research_question.md
+* docs/class_definitions.md
+* docs/dataset_strategy.md
+* docs/error_analysis.md
+* docs/future_integration.md
+* [🧠 Digital Twin Integration Strategy](docs/digital_twin_integration.md)
 
 ---
 
-#  Model Weights
+## 🧭 Repository Guide
 
-The final trained **YOLO11s multi-class façade defect detector** is available via GitHub Releases.
+For a structured walkthrough of the project:
 
-link: [Download YOLO11s.pt model weights](https://github.com/aesawy83-ai/AI-Facade-Inspection/releases/tag/v1.0)
-
----
-
-#  Error Analysis
-
-Detailed failure analysis:
-
-`docs/error_analysis.md`
-
-Typical failure patterns:
-
-* thin wire misses
-* crack vs stain confusion
-* shadow-heavy false positives
-* distant spalling misses
-* low-light recall degradation
-
----
-##  Digital Twin Integration
-
-The full Digital Twin system design, including BIM linkage, lifecycle modelling, and system architecture, is documented here:
-
- [View Digital Twin Integration Strategy](docs/digital_twin_integration.md)
-
-##  Roadmap
-
-### Phase 1 — Detection
-- [x] Multi-class YOLO11 baseline
-- [x] Roboflow dataset pipeline
-- [x] Colab reproducibility
-- [x] GitHub documentation system
-
-### Phase 2 — Structuring
-- [x] JSON defect schema
-- [x] severity scoring
-- [x] asset tagging
-
-### Phase 3 — BIM / Digital Twin
-- [ ] IFC mapping
-- [ ] dashboard visualization
-- [ ] lifecycle analytics
+👉 See `repository_guide.md`
 
 ---
 
-# 📄 License
+## ⚙️ Training Configuration
 
-**Group_2 License**
+| Parameter         | Value        |
+| ----------------- | ------------ |
+| Model             | YOLO11s      |
+| Framework         | Ultralytics  |
+| Training Platform | Google Colab |
+| GPU               | T4 High RAM  |
+| Epochs            | 50           |
+| Image Size        | 640          |
+| Batch Size        | 16           |
 
 ---
 
-# 👤 Author
+## 🔮 Future Work
 
-**Group_2**
+* BIM / Revit linking
+* IFC object tagging
+* Digital Twin dashboard
+* condition trend analytics
+* predictive maintenance
+* integration with real-time Digital Twin platforms
+
+---
+
+## 🏁 Final Statement
+
+This project demonstrates how **computer vision can be integrated with BIM and Digital Twin workflows** to enable **scalable, traceable, and lifecycle-driven façade inspection systems**.
