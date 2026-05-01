@@ -43,20 +43,7 @@ Each detection should be converted into a structured **JSON or CSV record**.
 
 ### Example:
 
-```json
-{
-  "defect_id": "DEF_0001",
-  "asset_id": "WALL_N_04",
-  "ifc_guid": null,
-  "defect_type": "crack",
-  "confidence": 0.98,
-  "severity": "high",
-  "bbox": [120, 85, 460, 220],
-  "pixel_area": 450,
-  "image_id": "IMG_0234",
-  "evidence_link": "results/predictions_new/IMG_0234.jpg",
-  "association_status": "pending_review"
-}
+
 ---
 ## BIM Association Logic
 
