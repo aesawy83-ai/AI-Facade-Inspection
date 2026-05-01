@@ -3,6 +3,17 @@
 
 Welcome to the **documentation and methodology hub** for the AI-Facade-Inspection project.
 
+## 📘 Documentation Hub
+
+- docs/README.md  
+- docs/problem_framing.md  
+- docs/research_question.md  
+- docs/class_definitions.md  
+- docs/dataset_strategy.md  
+- docs/error_analysis.md  
+- docs/future_integration.md  
+- [Digital Twin Integration Strategy](docs/digital_twin_integration.md)
+
 This `/docs` folder is designed as the **research backbone** of the repository, connecting the computer vision pipeline to the broader **AECO, BIM, and Digital Twin workflow vision**.
 
 It supports the full project framework:
