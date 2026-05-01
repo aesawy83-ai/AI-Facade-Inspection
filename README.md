@@ -40,7 +40,7 @@ Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → 
 
 ## 🔷 AI to Digital Twin Pipeline
 
-![Pipeline](assets/pipeline_dt_v2.png)
+![Pipeline](assets/pipeline_dt.png)
 
 *Figure — AI-to-Digital Twin inspection pipeline*
 
@@ -57,7 +57,7 @@ This pipeline transforms inspection imagery into structured defect intelligence 
 
 ### 🟢 BIM Association Logic
 
-![BIM Logic](assets/bim_logic_v2.png)
+![BIM Logic](assets/bim_logic.png)
 
 *Figure — BIM association decision logic*
 
@@ -71,7 +71,7 @@ This pipeline transforms inspection imagery into structured defect intelligence 
 
 ### 🟡 Digital Twin Condition Model
 
-![Lifecycle](assets/dt_lifecycle_v2.png)
+![Lifecycle](assets/dt_lifecycle.png)
 
 *Figure — Digital Twin condition state lifecycle*
 
