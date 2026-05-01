@@ -26,6 +26,7 @@ This repository focuses on the **Detect → Structure stages**, while defining t
 ## System Workflow Overview
 ```text
 Capture → Detect → Structure → Integrate → Assess
+This workflow represents the transformation from raw inspection imagery to structured condition intelligence within a Digital Twin environment.
 ```
 
 ###  Implementation Mapping
@@ -40,10 +41,9 @@ Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → 
 ![Architecture](assets/architecture_dt.png)
 
 *Figure - End-to-end AI → BIM → Digital Twin system architecture*
+It defines how raw inspection data is transformed into structured, traceable, and decision-ready asset intelligence.
 
-This diagram provides a system-level view of how façade inspection data flows
-from image acquisition through AI detection, structured data generation,
-BIM integration, and Digital Twin lifecycle management.
+This diagram illustrates the end-to-end system architecture linking AI-based defect detection with BIM integration and Digital Twin lifecycle management.
 
 ---
 
