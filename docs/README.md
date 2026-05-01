@@ -15,7 +15,7 @@ This `/docs` directory serves as the **system architecture and research backbone
 * docs/dataset_strategy.md
 * docs/error_analysis.md
 * docs/future_integration.md
-* [🧠 Digital Twin Integration Strategy](docs/digital_twin_integration.md)
+* docs/ [🧠 Digital Twin Integration Strategy](docs/digital_twin_integration.md)
 
 ---
 
