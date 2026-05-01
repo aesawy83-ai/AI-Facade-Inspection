@@ -244,6 +244,6 @@ Digital Twin integration strategy documented in:
 docs/digital_twin_integration.md
 ```
 ## Final System Statement
-
 This work demonstrates how computer vision can be integrated with BIM and Digital Twin principles to transform façade inspection into a structured, scalable, and lifecycle-driven process.
----
+
+
