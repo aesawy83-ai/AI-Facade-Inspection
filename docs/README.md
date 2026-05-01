@@ -6,7 +6,7 @@ This `/docs` directory serves as the **system architecture and research backbone
 
 ---
 
-## 📘 Documentation Overview
+##  Documentation Overview
 
 * docs/README.md
 * docs/problem_framing.md
@@ -19,7 +19,7 @@ This `/docs` directory serves as the **system architecture and research backbone
 
 ---
 
-## 🧭 System Context
+##  System Context
 
 This documentation supports the full inspection intelligence workflow:
 
@@ -37,7 +37,7 @@ This ensures the repository operates as a **complete AI → BIM → Digital Twin
 
 ---
 
-# 🗂️ Documentation Map
+#  Documentation Map
 
 ## 🔬 Research & Problem Framing
 
@@ -48,7 +48,7 @@ Defines the **academic foundation and problem context**.
 
 ---
 
-## 🏷️ Dataset & Annotation Governance
+##  Dataset & Annotation Governance
 
 Defines **data quality, labeling consistency, and scalability**.
 
@@ -57,7 +57,7 @@ Defines **data quality, labeling consistency, and scalability**.
 
 ---
 
-## 📊 Benchmarking & Validation
+##  Benchmarking & Validation
 
 Defines **model reliability and evaluation methodology**.
 
@@ -66,7 +66,7 @@ Defines **model reliability and evaluation methodology**.
 
 ---
 
-## 🔗 System Integration & Lifecycle Workflow
+##  System Integration & Lifecycle Workflow
 
 Connects the detection pipeline to **real-world AECO workflows**.
 
@@ -75,7 +75,7 @@ Connects the detection pipeline to **real-world AECO workflows**.
 
 ---
 
-## 🧠 Digital Twin Layer (Core System Component)
+##  Digital Twin Layer (Core System Component)
 
 * [Digital Twin Integration Strategy](docs/digital_twin_integration.md)
 
@@ -89,7 +89,7 @@ It formalizes the system as a **state-based Digital Twin**, where façade condit
 
 ---
 
-# 🏗️ Methodology Alignment (FMP)
+#  Methodology Alignment (FMP)
 
 This documentation structure mirrors the methodological logic of the Final Master Project.
 
@@ -105,7 +105,7 @@ This alignment ensures the repository is not just a code base, but a **traceable
 
 ---
 
-# 📖 Recommended Reading Order
+#  Recommended Reading Order
 
 For best understanding, review in the following sequence:
 
@@ -127,6 +127,6 @@ Problem → Data → Model → Validation → Integration → Deployment → Lif
 
 ---
 
-# 🏁 Final Note
+#  Final Note
 
 This documentation hub elevates the project from a standalone computer vision model to a **structured AI-enabled inspection system aligned with BIM and Digital Twin workflows**.
