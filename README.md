@@ -39,7 +39,7 @@ Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → 
 
 ![Architecture](assets/architecture_dt.png)
 
-*Figure — End-to-end AI → BIM → Digital Twin system architecture*
+*Figure - End-to-end AI → BIM → Digital Twin system architecture*
 
 This diagram provides a system-level view of how façade inspection data flows
 from image acquisition through AI detection, structured data generation,
