@@ -24,8 +24,6 @@ This repository focuses on the **Detect → Structure stages**, while defining t
 
 ---
 
-##  System Workflow Overview
-
 ```text
 Capture → Detect → Structure → Integrate → Assess
 ```
