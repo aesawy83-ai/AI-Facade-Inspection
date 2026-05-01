@@ -23,7 +23,7 @@ The system uses a **YOLO11 multi-class object detection pipeline**, trained in *
 This repository focuses on the **Detect → Structure stages**, while defining the architecture required for downstream **BIM integration and Digital Twin lifecycle management**.
 
 ---
-
+## System Workflow Overview
 ```text
 Capture → Detect → Structure → Integrate → Assess
 ```
@@ -51,25 +51,25 @@ BIM integration, and Digital Twin lifecycle management.
 
 ![Pipeline](assets/pipeline_dt.png)
 
-*Figure — AI-to-Digital Twin inspection pipeline*
+*Figure - AI-to-Digital Twin inspection pipeline*
 
 This pipeline transforms inspection imagery into structured defect intelligence
 for BIM integration and Digital Twin lifecycle tracking.
 
 ---
 
-##  BIM Association Logic | 🟡 Digital Twin Condition Model
+##  BIM Association Logic |  Digital Twin Condition Model
 
 <table>
 <tr>
 
 <td width="50%">
 
-### 🟢 BIM Association Logic
+###  BIM Association Logic
 
 ![BIM Logic](assets/bim_logic.png)
 
-*Figure — BIM association decision logic*
+*Figure - BIM association decision logic*
 
 * Validation-based linking (no forced association)
 * Confidence-driven decision workflow
