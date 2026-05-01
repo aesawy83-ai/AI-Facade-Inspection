@@ -1,6 +1,8 @@
-# 🧠 Digital Twin Integration Strategy
+# Digital Twin Integration Strategy
 
-## 🎯 Purpose
+---
+
+## Purpose
 
 This repository currently implements the **Detect** stage of the façade inspection workflow using YOLO-based multi-class defect detection.
 
@@ -8,15 +10,23 @@ The wider project vision extends this into a Digital Twin workflow where image-b
 
 ---
 
-## 🧭 Target Workflow
+## Target Workflow
 
 ```text
 Capture → Detect → Structure → Integrate → Assess
 ```
 
-### 🔗 Technical Pipeline Mapping
+---
 
-The conceptual workflow maps to the implemented system pipeline as follows:
+## Workflow Mapping
+
+The conceptual inspection workflow:
+
+```text
+Capture → Detect → Structure → Integrate → Assess
+```
+
+is implemented as:
 
 ```text
 Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → Dashboard
@@ -24,7 +34,27 @@ Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → 
 
 ---
 
-## 🏗️ Digital Twin Role
+## System Pipeline (see Figure 1)
+
+![System Pipeline](../assets/pipeline_dt_v2.png)
+
+This pipeline transforms inspection imagery into structured, BIM-linked intelligence ready for Digital Twin integration and decision-making.
+
+---
+
+## Integrated System Overview
+
+This system combines three core components:
+
+* The **AI detection pipeline**, which converts inspection images into structured defect data
+* The **BIM association logic**, which links defects to physical building elements
+* The **Digital Twin condition model**, which tracks asset condition over time
+
+Together, these components form a complete inspection intelligence workflow from detection to lifecycle decision-making.
+
+---
+
+## Digital Twin Role
 
 The Digital Twin layer is responsible for converting façade defect detections into **persistent asset condition records**.
 
@@ -38,7 +68,7 @@ It is not limited to visual detection. Its role is to support:
 
 ---
 
-## 🔄 Data Flow
+## Data Flow
 
 ```text
 Inspection Image
@@ -56,11 +86,13 @@ Dashboard / Maintenance Decision
 
 ---
 
-## 🧾 Structured Defect Record
+## Structured Defect Record
 
 Each detection should be converted into a structured JSON/CSV record.
 
-### Example
+This structured format enables integration with BIM systems and Digital Twin platforms.
+
+### JSON Example
 
 ```json
 {
@@ -80,18 +112,20 @@ Each detection should be converted into a structured JSON/CSV record.
 
 ---
 
-## 🏢 BIM Association Logic
+## BIM Association Logic (see Figure 2)
+
+![BIM Association Logic](../assets/bim_logic_v2.png)
 
 Defects should only be linked to BIM elements when spatial confidence is acceptable.
 
-The system should avoid forced BIM association.
+The system avoids forced BIM association and applies validation-driven decision logic.
 
 ### Recommended Statuses
 
-* `validated`
-* `candidate`
-* `pending_review`
-* `withheld`
+* validated
+* candidate
+* pending_review
+* withheld
 
 ### Association Criteria
 
@@ -101,23 +135,23 @@ The system should avoid forced BIM association.
 * projected defect location
 * manual reviewer confirmation
 
-### 🔍 Decision Logic Mapping
+---
 
-The BIM association workflow follows a validation-first approach:
+## BIM–Digital Twin Link
 
-* Detection outputs are passed through spatial validation
-* If confidence and spatial alignment are high → automatically linked to BIM element
-* If confidence is low or ambiguous → flagged for manual review
+BIM provides the spatial and semantic structure of the asset, while the Digital Twin extends this by incorporating **time-based condition data**.
+
+Each defect record is anchored to a BIM element (via IFC GUID or element ID) and updated over time within the Digital Twin condition model.
 
 ---
 
-## 🔗 Revit / IFC Integration
+## Revit / IFC Integration
 
 Future implementation may include:
 
 * IFC GUID tagging
 * Revit shared parameter updates
-* Dynamo/Revit API integration
+* Dynamo / Revit API integration
 * external defect registers linked to BIM elements
 * clickable evidence links from BIM to inspection images
 
@@ -134,53 +168,45 @@ Future implementation may include:
 
 ---
 
-## 📈 Digital Twin Update Principle
+## Digital Twin Condition Model (see Figure 3)
 
-The Digital Twin should be updated through **controlled records**, not uncontrolled model overwrites.
-
-Each inspection creates a new condition state.
+![Digital Twin Lifecycle](../assets/dt_lifecycle_v2.png)
 
 ---
 
-## 🧠 Condition State Model
+## Digital Twin State Model
 
-The Digital Twin operates as a **state-based system** where each inspection updates the condition of an asset over time.
+The Digital Twin operates as a **state-based system**, where each inspection represents a new condition state of the asset.
 
-Each state represents a snapshot of the asset condition:
+### State Transitions
 
-* T1 → Initial detection
-* T2 → Condition deterioration or progression
-* T3 → Maintenance action and closure
+* **T1** → Detection (initial condition)
+* **T2** → Deterioration (severity increase)
+* **T3** → Repair and closure
+
+This enables temporal tracking, condition evolution analysis, and lifecycle decision support.
+
+---
+
+## Digital Twin Update Principle
+
+The Digital Twin should be updated through **controlled records**, not uncontrolled model overwrites.
+
+Each inspection creates a new condition state rather than overwriting previous data.
 
 ### Example
 
 ```text
-T1 → Crack detected → Medium severity
-T2 → Crack expanded → High severity
-T3 → Repair completed → Closed
+T1 → Crack detected → Medium severity  
+T2 → Crack expanded → High severity  
+T3 → Repair completed → Closed  
 ```
 
-This enables:
-
-* trend analysis
-* maintenance planning
-* lifecycle decision-making
+This enables trend analysis, maintenance planning, and lifecycle decision-making.
 
 ---
 
-## 🔗 Integrated System View
-
-The three core components of the system operate together:
-
-* The **AI Pipeline** transforms images into structured defect data
-* The **BIM Association Logic** determines how defects are linked to physical building elements
-* The **Digital Twin Timeline** tracks how asset conditions evolve over time
-
-Together, these layers enable a complete inspection intelligence workflow from detection to lifecycle decision-making.
-
----
-
-## ⚠️ Safety and Review Gates
+## Safety and Review Gates
 
 This repository is not intended to make standalone structural safety decisions.
 
@@ -191,3 +217,17 @@ Digital Twin updates should be reviewed when:
 * BIM association is uncertain
 * defect class is safety-critical
 * severity is high
+
+The system prioritises **reliable decision support over fully automated model updates**.
+
+---
+
+## Included in this Repository
+
+Digital Twin integration strategy documented in:
+
+```text
+docs/digital_twin_integration.md
+```
+
+---
