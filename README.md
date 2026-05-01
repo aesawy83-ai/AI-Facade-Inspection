@@ -36,7 +36,6 @@ Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → 
 
 ---
 
-##  System Architecture (End-to-End)
 
 ![Architecture](assets/architecture_dt.png)
 
