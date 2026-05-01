@@ -14,7 +14,7 @@
 
 ---
 
-## 📖 Introduction
+##  Introduction
 
 This repository implements an **AI-enabled façade inspection system** focused on the **Detect stage**, forming the foundation for **BIM-integrated Digital Twin workflows**.
 
@@ -24,13 +24,13 @@ This repository focuses on the **Detect → Structure stages**, while defining t
 
 ---
 
-## 🧭 System Workflow Overview
+##  System Workflow Overview
 
 ```text
 Capture → Detect → Structure → Integrate → Assess
 ```
 
-### 🔗 Implementation Mapping
+###  Implementation Mapping
 
 ```text
 Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → Dashboard
@@ -38,7 +38,7 @@ Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → 
 
 ---
 
-## 🧩 System Architecture (End-to-End)
+##  System Architecture (End-to-End)
 
 ![Architecture](assets/architecture_dt.png)
 
@@ -50,9 +50,9 @@ BIM integration, and Digital Twin lifecycle management.
 
 ---
 
-## 🔷 AI to Digital Twin Pipeline
+##  AI to Digital Twin Pipeline
 
-![Pipeline](assets/pipeline_dt_v2.png)
+![Pipeline](assets/pipeline_dt.png)
 
 *Figure — AI-to-Digital Twin inspection pipeline*
 
@@ -61,7 +61,7 @@ for BIM integration and Digital Twin lifecycle tracking.
 
 ---
 
-## 🟢 BIM Association Logic | 🟡 Digital Twin Condition Model
+##  BIM Association Logic | 🟡 Digital Twin Condition Model
 
 <table>
 <tr>
@@ -70,7 +70,7 @@ for BIM integration and Digital Twin lifecycle tracking.
 
 ### 🟢 BIM Association Logic
 
-![BIM Logic](assets/bim_logic_v2.png)
+![BIM Logic](assets/bim_logic.png)
 
 *Figure — BIM association decision logic*
 
@@ -82,9 +82,9 @@ for BIM integration and Digital Twin lifecycle tracking.
 
 <td width="50%">
 
-### 🟡 Digital Twin Condition Model
+###  Digital Twin Condition Model
 
-![Lifecycle](assets/dt_lifecycle_v2.png)
+![Lifecycle](assets/dt_lifecycle.png)
 
 *Figure — Digital Twin condition state lifecycle*
 
@@ -99,7 +99,7 @@ for BIM integration and Digital Twin lifecycle tracking.
 
 ---
 
-## 🔗 Integrated System View
+##  Integrated System View
 
 This system operates through three tightly coupled layers:
 
@@ -113,7 +113,7 @@ This enables future **predictive maintenance through condition trend analysis**.
 
 ---
 
-## 📊 Results Summary
+##  Results Summary
 
 | Metric       | Value |
 | ------------ | ----: |
@@ -136,7 +136,7 @@ BIM-linked Digital Twin condition model.
 
 ---
 
-## 📈 Evaluation Visual Evidence
+##  Evaluation Visual Evidence
 
 | PR Curve                         | Confusion Matrix                         |
 | -------------------------------- | ---------------------------------------- |
@@ -148,7 +148,7 @@ BIM-linked Digital Twin condition model.
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```text
 assets/              → diagrams and visual assets  
@@ -161,7 +161,7 @@ repository_guide.md  → navigation and explanation
 
 ---
 
-## 📘 Documentation Hub
+##  Documentation Hub
 
 * docs/README.md
 * docs/problem_framing.md
@@ -170,19 +170,19 @@ repository_guide.md  → navigation and explanation
 * docs/dataset_strategy.md
 * docs/error_analysis.md
 * docs/future_integration.md
-* [🧠 Digital Twin Integration Strategy](docs/digital_twin_integration.md)
+* docs/Digital Twin Integration Strategy
 
 ---
 
-## 🧭 Repository Guide
+##  Repository Guide
 
 For a structured walkthrough of the project:
 
-👉 See `repository_guide.md`
+ See `repository_guide.md`
 
 ---
 
-## ⚙️ Training Configuration
+##  Training Configuration
 
 | Parameter         | Value        |
 | ----------------- | ------------ |
@@ -196,7 +196,7 @@ For a structured walkthrough of the project:
 
 ---
 
-## 🔮 Future Work
+##  Future Work
 
 * BIM / Revit linking
 * IFC object tagging
@@ -207,7 +207,7 @@ For a structured walkthrough of the project:
 
 ---
 
-## 🏁 Final Statement
+##  Final Statement
 
 This project demonstrates how **computer vision can be integrated with BIM and Digital Twin workflows**
 to enable **scalable, traceable, and lifecycle-driven façade inspection systems**.
