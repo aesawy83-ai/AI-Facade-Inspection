@@ -29,9 +29,7 @@ Capture → Detect → Structure → Coordinate Mapping → Integrate → Digita
 
 Capture → Detect → Structure → Integrate → Assess
 
-maps to:
-
-Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → Dashboard
+maps to: Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → Dashboard
 ---
 
 ##  3. Data Flow Architecture
