@@ -4,7 +4,7 @@
 
 ## Purpose
 
-This repository implements the **Detect** stage of the façade inspection workflow using YOLO-based multi-class defect detection.
+This repository implements an AI-enabled façade inspection system focused on the Detect stage, forming the foundation for BIM-integrated Digital Twin workflows.
 
 The wider project vision extends this into a Digital Twin workflow where image-based detections are transformed into **structured, traceable, BIM-linked condition intelligence**.
 
@@ -243,5 +243,7 @@ Digital Twin integration strategy documented in:
 ```text id="mqyq2g"
 docs/digital_twin_integration.md
 ```
+## Final System Statement
 
+This work demonstrates how computer vision can be integrated with BIM and Digital Twin principles to transform façade inspection into a structured, scalable, and lifecycle-driven process.
 ---
