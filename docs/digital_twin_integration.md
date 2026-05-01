@@ -42,7 +42,7 @@ Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → 
 
 ## System Pipeline (see Figure 1)
 
-![System Pipeline](../assets/pipeline_dt_v2.png)
+![System Pipeline](../assets/pipeline_dt.png)
 
 *Figure 1 — AI-to-Digital Twin inspection pipeline*
 
@@ -124,7 +124,7 @@ This structured format enables integration with BIM systems and Digital Twin pla
 
 ## BIM Association Logic (see Figure 2)
 
-![BIM Association Logic](../assets/bim_logic_v2.png)
+![BIM Association Logic](../assets/bim_logic.png)
 
 *Figure 2 — BIM association decision logic*
 
@@ -182,7 +182,7 @@ Future implementation may include:
 
 ## Digital Twin Condition Model (see Figure 3)
 
-![Digital Twin Lifecycle](../assets/dt_lifecycle_v2.png)
+![Digital Twin Lifecycle](../assets/dt_lifecycle.png)
 
 *Figure 3 — Digital Twin condition state lifecycle*
 
