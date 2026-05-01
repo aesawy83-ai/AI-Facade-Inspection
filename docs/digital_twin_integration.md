@@ -4,15 +4,21 @@
 
 ## Purpose
 
-This repository currently implements the **Detect** stage of the façade inspection workflow using YOLO-based multi-class defect detection.
+This repository implements the **Detect** stage of the façade inspection workflow using YOLO-based multi-class defect detection.
 
 The wider project vision extends this into a Digital Twin workflow where image-based detections are transformed into **structured, traceable, BIM-linked condition intelligence**.
 
 ---
 
+## System Scope
+
+This repository focuses on the **Detect → Structure** stages of the workflow, while defining the architecture required for downstream **BIM integration and Digital Twin lifecycle management**.
+
+---
+
 ## Target Workflow
 
-```text
+```text id="t6mz2u"
 Capture → Detect → Structure → Integrate → Assess
 ```
 
@@ -22,21 +28,23 @@ Capture → Detect → Structure → Integrate → Assess
 
 The conceptual inspection workflow:
 
-```text
+```text id="n4q4ci"
 Capture → Detect → Structure → Integrate → Assess
 ```
 
 is implemented as:
 
-```text
+```text id="a7y3bz"
 Image → YOLO Detection → Structured JSON → BIM / IFC → Digital Twin → Dashboard
 ```
 
 ---
 
-## System Pipeline 
+## System Pipeline (see Figure 1)
 
-![System Pipeline](../assets/pipeline_dt.png)
+![System Pipeline](../assets/pipeline_dt_v2.png)
+
+*Figure 1 — AI-to-Digital Twin inspection pipeline*
 
 This pipeline transforms inspection imagery into structured, BIM-linked intelligence ready for Digital Twin integration and decision-making.
 
@@ -70,7 +78,7 @@ It is not limited to visual detection. Its role is to support:
 
 ## Data Flow
 
-```text
+```text id="pbx7c0"
 Inspection Image
 ↓
 YOLO Detection
@@ -84,6 +92,8 @@ Digital Twin Condition Update
 Dashboard / Maintenance Decision
 ```
 
+The data flow corresponds directly to the system pipeline illustrated in Figure 1.
+
 ---
 
 ## Structured Defect Record
@@ -94,7 +104,7 @@ This structured format enables integration with BIM systems and Digital Twin pla
 
 ### JSON Example
 
-```json
+```json id="xk7e5h"
 {
   "defect_id": "DEF_0001",
   "asset_id": "WALL_N_04",
@@ -112,9 +122,11 @@ This structured format enables integration with BIM systems and Digital Twin pla
 
 ---
 
-## BIM Association Logic 
+## BIM Association Logic (see Figure 2)
 
-![BIM Association Logic](../assets/bim_logic.png)
+![BIM Association Logic](../assets/bim_logic_v2.png)
+
+*Figure 2 — BIM association decision logic*
 
 Defects should only be linked to BIM elements when spatial confidence is acceptable.
 
@@ -168,9 +180,11 @@ Future implementation may include:
 
 ---
 
-## Digital Twin Condition Model 
+## Digital Twin Condition Model (see Figure 3)
 
-![Digital Twin Lifecycle](../assets/dt_lifecycle.png)
+![Digital Twin Lifecycle](../assets/dt_lifecycle_v2.png)
+
+*Figure 3 — Digital Twin condition state lifecycle*
 
 ---
 
@@ -196,7 +210,7 @@ Each inspection creates a new condition state rather than overwriting previous d
 
 ### Example
 
-```text
+```text id="v1o5kg"
 T1 → Crack detected → Medium severity  
 T2 → Crack expanded → High severity  
 T3 → Repair completed → Closed  
@@ -226,7 +240,7 @@ The system prioritises **reliable decision support over fully automated model up
 
 Digital Twin integration strategy documented in:
 
-```text
+```text id="mqyq2g"
 docs/digital_twin_integration.md
 ```
 
