@@ -113,10 +113,7 @@ This enables future **predictive maintenance through condition trend analysis**.
 
 ## Results Summary
 
-The latest YOLO11s model was trained for 100 epochs on the combined
-three-class façade defect dataset.
-
-### Validation Performance
+## Validation Performance
 
 | Metric | Value |
 |---|---:|
@@ -125,7 +122,7 @@ three-class façade defect dataset.
 | mAP@0.5 | 0.882 |
 | mAP@0.5:0.95 | 0.781 |
 
-### Class-wise AP@0.5:0.95
+## Class-wise AP@0.5:0.95
 
 | Class | AP |
 |---|---:|
@@ -133,7 +130,7 @@ three-class façade defect dataset.
 | Spalling | 0.705 |
 | Wire | 0.953 |
 
-### Independent Test Performance
+## Test Performance
 
 | Metric | Value |
 |---|---:|
