@@ -157,10 +157,6 @@ BIM-linked Digital Twin condition model.
 | ------------------------------- | -------------------------------- |
 | ![](results/curves/results.png) | ![](results/curves/F1_curve.png) |
 
-BoxF1_curve.png      → results/curves/F1_curve.png
-BoxPR_curve.png      → results/curves/PR_curve.png
-confusion_matrix.png → results/curves/confusion_matrix.png
-results.png          → results/curves/results.png
 ---
 
 ##  Repository Structure
