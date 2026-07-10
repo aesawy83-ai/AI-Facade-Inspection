@@ -12,9 +12,6 @@ This document summarizes the major failure modes observed in current model valid
 - confusion with façade joints
 - false positives on shadows
 
-###  Efflorescence
-- confused with bright paint regions
-- weak under glare
 
 ###  Spalling
 - misses small detached patches
