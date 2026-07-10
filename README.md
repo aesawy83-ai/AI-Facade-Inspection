@@ -110,23 +110,37 @@ This enables future **predictive maintenance through condition trend analysis**.
 
 ---
 
-##  Results Summary
 
-| Metric       | Value |
-| ------------ | ----: |
-| mAP@0.5      |  0.18 |
-| mAP@0.5:0.95 |  0.09 |
-| Precision    |  0.28 |
-| Recall       |  0.21 |
+## Results Summary
 
-### Class-wise AP@0.5
+The latest YOLO11s model was trained for 100 epochs on the combined
+three-class façade defect dataset.
 
-| Class         |    AP |
-| ------------- | ----: |
-| crack         | 0.354 |
-| efflorescence | 0.148 |
-| spalling      | 0.155 |
-| wires         | 0.056 |
+### Validation Performance
+
+| Metric | Value |
+|---|---:|
+| Precision | 0.916 |
+| Recall | 0.828 |
+| mAP@0.5 | 0.882 |
+| mAP@0.5:0.95 | 0.781 |
+
+### Class-wise AP@0.5:0.95
+
+| Class | AP |
+|---|---:|
+| Crack | 0.684 |
+| Spalling | 0.705 |
+| Wire | 0.953 |
+
+### Independent Test Performance
+
+| Metric | Value |
+|---|---:|
+| Precision | 0.911 |
+| Recall | 0.811 |
+| mAP@0.5 | 0.890 |
+| mAP@0.5:0.95 | 0.798 |
 
 These results represent the detection performance that feeds into the downstream
 BIM-linked Digital Twin condition model.
@@ -179,17 +193,22 @@ For a structured walkthrough of the project:
 
 ---
 
-##  Training Configuration
 
-| Parameter         | Value        |
-| ----------------- | ------------ |
-| Model             | YOLO11s      |
-| Framework         | Ultralytics  |
-| Training Platform | Google Colab |
-| GPU               | T4 High RAM  |
-| Epochs            | 50           |
-| Image Size        | 640          |
-| Batch Size        | 16           |
+## Training Configuration
+
+| Parameter | Value |
+|---|---|
+| Model | YOLO11s |
+| Framework | Ultralytics |
+| Training platform | Google Colab |
+| GPU | NVIDIA Tesla T4 |
+| Dataset | FMP Combined Dataset, Version 1 |
+| Classes | Crack, Spalling, Wire |
+| Number of classes | 3 |
+| Epochs | 100 |
+| Image size | 640 |
+| Batch size | 16 |
+| Early-stopping patience | 20 |
 
 ---
 
